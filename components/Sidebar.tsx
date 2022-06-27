@@ -18,10 +18,10 @@ function Sidebar() {
                 const dateTime = new Date(
                   Math.round(item.time * 1000)
                 ).toLocaleString()
-                if (item.sensorType == 'pir') {
+                if (item.sensorType == 'PIR') {
                   return `Human detected at ${dateTime}`
                 } else {
-                  return `MQ5 detected at ${dateTime}`
+                  return `Gas detected at ${dateTime}`
                 }
               })
           )
